@@ -82,17 +82,17 @@
         <form role="form">
 
           <div class="form-group">
-            <label for="from">From</label>
-            <input type="text" id="from" name="from">
+            <label for="from"></label>
+            <input type="text" id="from" name="from" placeholder="Starts">
           </div>
 
           <div class="form-group">
-            <label for="to">to</label>
-            <input type="text" id="to" name="to">
+            <label for="to"></label>
+            <input type="text" id="to" name="to" placeholder="Ends">
           </div>
           
           <button type="submit" class="btn btn-default">Submit</button>
-          
+
         </form>
 
       </div>
