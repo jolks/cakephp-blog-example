@@ -12,9 +12,32 @@
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
 
     <!-- Custom styles for this template -->
     <link href="assets/style.css" rel="stylesheet">
+
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script>
+      $(function() {
+        $( "#from" ).datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 1,
+          onClose: function( selectedDate ) {
+            $( "#to" ).datepicker( "option", "minDate", selectedDate );
+          }
+        });
+        $( "#to" ).datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 1,
+          onClose: function( selectedDate ) {
+            $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+          }
+        });
+      });
+    </script>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -53,7 +76,10 @@
 
       <div class="starter-template">
         <h1>Book Security</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <label for="from">From</label>
+        <input type="text" id="from" name="from">
+        <label for="to">to</label>
+        <input type="text" id="to" name="to">
       </div>
 
     </div><!-- /.container -->
@@ -62,7 +88,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
