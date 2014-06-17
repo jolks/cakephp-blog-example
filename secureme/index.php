@@ -91,7 +91,7 @@
             <input type="text" id="to" name="to" placeholder="Ends">
           </div>
           
-          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="submit" class="btn-lg btn-success">Submit</button>
 
         </form>
 
