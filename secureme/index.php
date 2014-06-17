@@ -76,10 +76,25 @@
 
       <div class="starter-template">
         <h1>Book Security</h1>
-        <label for="from">From</label>
-        <input type="text" id="from" name="from">
-        <label for="to">to</label>
-        <input type="text" id="to" name="to">
+
+        
+        
+        <form role="form">
+
+          <div class="form-group">
+            <label for="from">From</label>
+            <input type="text" id="from" name="from">
+          </div>
+
+          <div class="form-group">
+            <label for="to">to</label>
+            <input type="text" id="to" name="to">
+          </div>
+          
+          <button type="submit" class="btn btn-default">Submit</button>
+          
+        </form>
+
       </div>
 
     </div><!-- /.container -->
