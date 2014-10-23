@@ -67,7 +67,7 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
+		'host' => '127.12.29.130',
 		'login' => 'adminsCwFvzF',
 		'password' => '91swtHjqVsSi',
 		'database' => 'security',
@@ -78,7 +78,7 @@ class DATABASE_CONFIG {
 	public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
+		'host' => '127.12.29.130',
 		'login' => 'adminsCwFvzF',
 		'password' => '91swtHjqVsSi',
 		'database' => 'security',
