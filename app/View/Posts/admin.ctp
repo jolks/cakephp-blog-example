@@ -43,7 +43,7 @@
                     echo $this->Html->link(
                         'Edit',
                         array('action' => 'edit', $post['Post']['id']),
-                        array('class' => 'btn btn-warning btn-xs', 'role' => 'button')
+                        array('class' => 'glyphicon glyphicon-pencil')
                     );
                 ?>
             </td>
