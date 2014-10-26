@@ -2,17 +2,17 @@
     <?php echo $this->Html->link(
         'View Blog',
         array('controller' => 'posts', 'action' => 'index'),
-        array('class' => 'btn btn-primary btn-lg', 'role' => 'button')
+        array('class' => 'btn btn-primary btn-sm', 'role' => 'button')
     ); ?>
 
     <?php echo $this->Html->link(
         'Add Post',
         array('controller' => 'posts', 'action' => 'add'),
-        array('class' => 'btn btn-primary btn-lg', 'role' => 'button')
+        array('class' => 'btn btn-primary btn-sm', 'role' => 'button')
     ); ?>
 </div>
 
-
+<div class="row"></div>
 
 <div class="row">
     <table class="table table-hover">
