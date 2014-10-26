@@ -2,13 +2,13 @@
 <?php
 echo $this->Form->create('Post');
 
-echo h('<div class="form-group">');
+echo('<div class="form-group">');
 echo $this->Form->input('title', array('class' => 'form-control'));
-echo h('</div>');
+echo('</div>');
 
-echo h('<div class="form-group">');
+echo('<div class="form-group">');
 echo $this->Form->input('body', array('class' => 'form-control', 'rows' => '3'));
-echo h('</div>');
+echo('</div>');
 
 echo $this->Form->end('Save Post');
 ?>
