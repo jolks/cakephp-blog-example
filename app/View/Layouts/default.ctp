@@ -31,9 +31,7 @@
       <?php echo $this->fetch('content'); ?>
        
       <!--<hr>-->
-      <footer>
-        <p>Developed by <a href="http://www.jolks.co">John Lau</a></p>
-      </footer>
+      
        
     </div> <!-- /container -->
      
@@ -45,4 +43,5 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <?php echo $this->Html->script('bootstrap.min'); ?>
 </body>
+
 </html>
