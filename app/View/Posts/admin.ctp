@@ -2,17 +2,19 @@
     <?php echo $this->Html->link(
         'View Blog',
         array('controller' => 'posts', 'action' => 'index'),
-        array('class' => 'btn btn-primary btn-sm', 'role' => 'button')
+        array('class' => 'btn btn-primary btn', 'role' => 'button')
     ); ?>
 
     <?php echo $this->Html->link(
         'Add Post',
         array('controller' => 'posts', 'action' => 'add'),
-        array('class' => 'btn btn-primary btn-sm', 'role' => 'button')
+        array('class' => 'btn btn-primary btn', 'role' => 'button')
     ); ?>
 </div>
 
-<div class="row"></div>
+<div class="row">
+    <p></p>
+</div>
 
 <div class="row">
     <table class="table table-hover">
@@ -41,7 +43,7 @@
                 ?>
                 <?php
                     echo $this->Html->link(
-                        'Edit',
+                        ' Edit',
                         array('action' => 'edit', $post['Post']['id']),
                         array('class' => 'glyphicon glyphicon-pencil')
                     );
