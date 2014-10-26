@@ -31,7 +31,7 @@ class PostsController extends AppController {
 
             if ($this->Post->save($this->request->data)) {
                 $this->Session->setFlash(__('Your post has been saved.'));
-                return $this->redirect(array('action' => 'index'));
+                return $this->redirect(array('action' => 'admin'));
             }
             $this->Session->setFlash(__('Unable to add your post.'));
         }
@@ -51,7 +51,7 @@ class PostsController extends AppController {
             $this->Post->id = $id;
             if ($this->Post->save($this->request->data)) {
                 $this->Session->setFlash(__('Your post has been updated.'));
-                return $this->redirect(array('action' => 'index'));
+                return $this->redirect(array('action' => 'admin'));
             }
             $this->Session->setFlash(__('Unable to update your post.'));
         }
@@ -73,7 +73,7 @@ class PostsController extends AppController {
             $this->Session->setFlash(
                 __('%s has been deleted.', h($title))
             );
-            return $this->redirect(array('action' => 'index'));
+            return $this->redirect(array('action' => 'admin'));
         }
     }
 }
