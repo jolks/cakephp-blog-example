@@ -1,4 +1,4 @@
-<div class="container">
+<div class="row">
     <?php echo $this->Html->link(
         'View Blog',
         array('controller' => 'posts', 'action' => 'index'),
@@ -12,9 +12,9 @@
     ); ?>
 </div>
 
-<div class="container"></div>
 
-<div class="container">
+
+<div class="row">
     <table class="table table-hover">
         <tr>
             <th>Title</th>
