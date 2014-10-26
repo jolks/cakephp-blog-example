@@ -7,7 +7,7 @@ echo $this->Form->input('title', array('class' => 'form-control'));
 echo('</div>');
 
 echo('<div class="form-group">');
-echo $this->Form->input('body', array('class' => 'form-control', 'rows' => '3'));
+echo $this->Form->input('body', array('class' => 'form-control', 'rows' => '5'));
 echo('</div>');
 
 echo $this->Form->end('Save Post');
