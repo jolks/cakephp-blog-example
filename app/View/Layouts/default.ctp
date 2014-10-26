@@ -3,7 +3,7 @@
 <head>
     <?php echo $this->Html->charset(); ?>
     <title>
-        Cap Forum
+        My Blog
     </title>
     <?php
         echo $this->Html->meta('icon');
@@ -26,11 +26,11 @@
     <?php echo $this->element('navigation');?>
    
     <div class="container">
-      <?php echo $this->Session->flash(); ?>
+      <div class="alert alert-info" role="alert"><?php echo $this->Session->flash(); ?></div>
  
       <?php echo $this->fetch('content'); ?>
        
-      <hr>
+      <!--<hr>-->
       <footer>
         <p>Developed by <a href="http://www.jolks.co">John Lau</a></p>
       </footer>

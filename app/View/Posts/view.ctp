@@ -1,7 +1,4 @@
-<?php echo $this->Html->link(
-    'Back',
-    array('controller' => 'posts', 'action' => 'index')
-); ?>
+
 
 <h1><?php echo h($post['Post']['title']); ?></h1>
 
