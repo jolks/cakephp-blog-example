@@ -43,7 +43,7 @@
                 ?>
                 <?php
                     echo $this->Html->link(
-                        ' Edit',
+                        'Edit',
                         array('action' => 'edit', $post['Post']['id']),
                         array('class' => 'glyphicon glyphicon-pencil')
                     );
