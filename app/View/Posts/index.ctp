@@ -1,4 +1,3 @@
-<p>My Blog</p>
 
 <?php foreach ($posts as $post): ?>
     <h1><?php
