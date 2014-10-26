@@ -26,7 +26,7 @@
     <?php echo $this->element('navigation');?>
    
     <div class="container">
-      <div class="alert alert-info" role="alert"><?php echo $this->Session->flash(); ?></div>
+      <?php echo $this->Session->flash(); ?>
  
       <?php echo $this->fetch('content'); ?>
        

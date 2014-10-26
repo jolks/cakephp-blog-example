@@ -32,10 +32,10 @@ class PostsController extends AppController {
             //pr($this->request->data);
 
             if ($this->Post->save($this->request->data)) {
-                $this->Session->setFlash(__('Your post has been saved.'));
+                $this->Session->setFlash(__('<div class="alert alert-success" role="alert">Your post has been saved.</div>', true));
                 return $this->redirect(array('action' => 'admin'));
             }
-            $this->Session->setFlash(__('Unable to add your post.'));
+            $this->Session->setFlash(__('<div class="alert alert-danger" role="alert">Unable to add your post.</div>', true));
         }
     }
 
@@ -52,10 +52,10 @@ class PostsController extends AppController {
         if ($this->request->is(array('post', 'put'))) {
             $this->Post->id = $id;
             if ($this->Post->save($this->request->data)) {
-                $this->Session->setFlash(__('Your post has been updated.'));
+                $this->Session->setFlash(__('<div class="alert alert-success" role="alert">Your post has been updated.</div>', true));
                 return $this->redirect(array('action' => 'admin'));
             }
-            $this->Session->setFlash(__('Unable to update your post.'));
+            $this->Session->setFlash(__('<div class="alert alert-danger" role="alert">Unable to update your post.</div>', true));
         }
 
         if (!$this->request->data) {
@@ -73,7 +73,7 @@ class PostsController extends AppController {
 
         if ($this->Post->delete($id)) {
             $this->Session->setFlash(
-                __('%s has been deleted.', h($title))
+                __('<div class="alert alert-success" role="alert">%s has been deleted.</div>', h($title), true)
             );
             return $this->redirect(array('action' => 'admin'));
         }
