@@ -12,6 +12,8 @@
     ); ?>
 </div>
 
+<div class="row"></div>
+
 <div class="container">
     <table class="table table-hover">
         <tr>
@@ -32,12 +34,15 @@
                     echo $this->Form->postLink(
                         'Delete',
                         array('action' => 'delete', $post['Post']['id']),
-                        array('confirm' => 'Are you sure?')
+                        array('confirm' => 'Are you sure?'),
+                        array('class' => 'btn btn-danger btn-xs', 'role' => 'button')
                     );
                 ?>
                 <?php
                     echo $this->Html->link(
-                        'Edit', array('action' => 'edit', $post['Post']['id'])
+                        'Edit',
+                        array('action' => 'edit', $post['Post']['id']),
+                        array('class' => 'btn btn-warning btn-xs', 'role' => 'button')
                     );
                 ?>
             </td>
