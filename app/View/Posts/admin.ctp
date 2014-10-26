@@ -21,12 +21,7 @@
 <?php foreach ($posts as $post): ?>
     <tr>
         <td>
-            <?php
-                echo $this->Html->link(
-                    $post['Post']['title'],
-                    array('action' => 'view', $post['Post']['id'])
-                );
-            ?>
+            <?php echo h($post['Post']['title']); ?>
         </td>
         <td>
             <?php
