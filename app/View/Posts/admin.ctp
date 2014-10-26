@@ -1,12 +1,14 @@
 
 <?php echo $this->Html->link(
     'View Blog',
-    array('controller' => 'posts', 'action' => 'index')
+    array('controller' => 'posts', 'action' => 'index'),
+    array('class' => 'btn btn-primary btn-lg', 'role' => 'button')
 ); ?>
 
 <?php echo $this->Html->link(
     'Add Post',
-    array('controller' => 'posts', 'action' => 'add')
+    array('controller' => 'posts', 'action' => 'add'),
+    array('class' => 'btn btn-primary btn-lg', 'role' => 'button')
 ); ?>
 
 <table>
