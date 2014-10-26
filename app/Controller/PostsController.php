@@ -4,7 +4,9 @@ class PostsController extends AppController {
     public $helpers = array('Html', 'Form', 'Session');
     public $components = array('Session');
 
-    // index...
+    public function index() {
+        $this->set('posts', $this->Post->find('all'));
+    }
 
     public function admin() {
         $this->set('posts', $this->Post->find('all'));
