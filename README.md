@@ -1,6 +1,5 @@
-# CakePHP
-
 ## Example Description
+
 Simple blog platform with create, edit, delete, and read post features.
 
 [![Latest Stable Version](https://poser.pugx.org/cakephp/cakephp/v/stable.svg)](https://packagist.org/packages/cakephp/cakephp)
