@@ -11,7 +11,7 @@
     array('class' => 'btn btn-primary btn-lg', 'role' => 'button')
 ); ?>
 
-<table>
+<table class="table table-hover">
     <tr>
         <th>Title</th>
         <th>Actions</th>
