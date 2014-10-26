@@ -32,10 +32,11 @@
             <td>
                 <?php
                     echo $this->Form->postLink(
-                        'Delete',
+                        $this->Html->tag('i', '', array('class' => 'glyphicon glyphicon-remove')). " Delete",
                         array('action' => 'delete', $post['Post']['id']),
-                        array('class' => 'btn btn-danger btn-xs', 'role' => 'button')
-                        array('confirm' => 'Are you sure?')
+                        array('escape'=>false),
+                        __('Are you sure you want to delete # %s?', $post['Post']['title']),
+                        array('class' => 'btn btn-mini')
                     );
                 ?>
                 <?php
