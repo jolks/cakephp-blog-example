@@ -12,7 +12,7 @@
     ); ?>
 </div>
 
-<div class="row"></div>
+<div class="container"></div>
 
 <div class="container">
     <table class="table table-hover">
@@ -34,8 +34,8 @@
                     echo $this->Form->postLink(
                         'Delete',
                         array('action' => 'delete', $post['Post']['id']),
-                        array('confirm' => 'Are you sure?'),
                         array('class' => 'btn btn-danger btn-xs', 'role' => 'button')
+                        array('confirm' => 'Are you sure?')
                     );
                 ?>
                 <?php
