@@ -1,4 +1,8 @@
-<h1>Blog posts</h1>
+
+<?php echo $this->Html->link(
+    'View Blog',
+    array('controller' => 'posts', 'action' => 'index')
+); ?>
 
 <?php echo $this->Html->link(
     'Add Post',
