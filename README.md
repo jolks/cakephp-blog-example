@@ -1,6 +1,6 @@
 ## Example Description
 
-Simple blog platform powered with Bootstrap 3 with create, edit, delete, and read post features.
+Simple blog platform powered with Bootstrap 3. Has create, edit, delete, and read post features.
 
 ## Example website
 
